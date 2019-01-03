@@ -9,6 +9,9 @@
   <h2><button id="pug">PUG!</button></h2>
   <a href="https://safinsingh235.github.io" id="link" style="visibility:hidden">Click Here!</a>
 <script>
+  $(document).ready(function(){
+    $("#link").hide();
+  });
   $("#pug").click(function {
     $("#link").show();
   });
