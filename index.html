@@ -11,23 +11,35 @@
       padding:0;
       font-size:150px;
     }
-    a {
+    #link {
       font-size:100px;
     }
     #pug {
       font-size:100px;
     }
+    #top {
+      background:black;
+      text-align:center;
+    }
+    .topbar {
+      color:white;
+      text-align:center;
+      margin:10px;
+      font-size:30px;
+    }
   </style>
 </head>
 <body>
   <h1>Gup's Website</h1>
+  <div id="top">
+    <a id="home" class="topbar" href="#">Home</a> <a id="pictures" class="topbar" href="pictures.html">Pictures</a>
+  </div>
   <button id="pug"><strong>PUG!</strong></button>
   <br>
   <br>
   <a id="link" href="https://safinsingh235.github.io">Click Here!</a>
   <br>
   <button id="nopug">:( Don't like pugs :(</button>
-
 <script>
   $(document).ready(function(){
     $("#link").hide();
