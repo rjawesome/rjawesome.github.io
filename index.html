@@ -1,20 +1,48 @@
 <!DOCTYPE html>
+<html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Gup's Website</title>
+  <style>
+    h1 {
+      background:lightgreen;
+      width:100%;
+      margin:0;
+      padding:0;
+      font-size:150px;
+    }
+    a {
+      font-size:100px;
+    }
+    #pug {
+      font-size:100px;
+    }
+  </style>
 </head>
-<html>
+<body>
   <h1>Gup's Website</h1>
-  <h2>GUP!</h2>
   <button id="pug"><strong>PUG!</strong></button>
   <br>
+  <br>
   <a id="link" href="https://safinsingh235.github.io">Click Here!</a>
+  <br>
+  <button id="nopug">:( Don't like pugs :(</button>
+
 <script>
   $(document).ready(function(){
     $("#link").hide();
+    $("#nopug").hide();
     $("#pug").click(function(){
       $("#link").show();
+      $("#pug").hide();
+      $("#nopug").show();
+    });
+    $("#nopug").click(function(){
+      $("#link").hide();
+      $("#nopug").hide();
+      $("#pug").show();
     });
   });
 </script>
+</body>
 </html>
