@@ -1,1 +1,58 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Gup's Website</title>
+  <style>
+    h1 {
+      background:lightgreen;
+      width:100%;
+      margin:0;
+      padding:0;
+      font-size:150px;
+    }
+    #link {
+      font-size:100px;
+    }
+    #pug {
+      font-size:100px;
+    }
+    #top {
+      background:black;
+      text-align:center;
+    }
+    .topbar {
+      color:white;
+      text-align:center;
+      margin:10px;
+      font-size:30px;
+    }
+  </style>
+</head>
+<!--comment-->
+<body>
+  <h1>Gup's Website</h1>
+  <div id="top">
+    <a id="home" class="topbar" href="index.html">Home</a> <a id="pictures" class="topbar" href="pictures.html">Pictures</a> <a id="fixtaxes" class="topbar" href="#">How to Fix Taxes</a>
+  </div>
+  <p> Article By John Smith </p>
+  <p> Published Jan 1, 2020 at 8 AM </p>
+  <p> My solution to fixing taxes is to make the top 1% pay all our income taxes. This is because they make so much money, upwards of $1 million a year on average. If we distribute income tax among these people, they would only pay around $500-750k!!! This is not that much for them. Therefore, I think this will fix a lot of our taxes.</p>
+<script>
+  $(document).ready(function(){
+    $("#link").hide();
+    $("#nopug").hide();
+    $("#pug").click(function(){
+      $("#link").show();
+      $("#pug").hide();
+      $("#nopug").show();
+    });
+    $("#nopug").click(function(){
+      $("#link").hide();
+      $("#nopug").hide();
+      $("#pug").show();
+    });
+  });
+</script>
+</body>
+</html>
