@@ -3,6 +3,7 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>rohanj.dev</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
   <style>
     #title {
       background-color:black;
@@ -48,6 +49,35 @@
     * {
       padding: 0;
       margin: 0;
+      
+    }
+    body {
+      background: url("images/binary.jpg");
+      height:100%;
+    }
+    #name {
+      font-size:100px;
+    }
+    #description {
+      font-size:20px;
+    }
+    #body {
+      text-align:center;
+      color:white;
+      font-family:"Open Sans";
+      top:50%;
+      left:50%;
+      position: absolute;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width:100%;
+    }
+    hr {
+      text-align:center;
+      margin-left:40%;
+      width:20%;
+      margin-top:5px;
+      margin-bottom:5px;
     }
   </style>
 </head>
@@ -55,6 +85,15 @@
   <!--<h1 id="title">rohanj.dev</h1>-->
   <div id="top">
     <strong id="title2">rohanj.dev</strong>    <a id="home" class="topbar" href="#">Home</a> <!--<span class="vl"></span>--> <a id="pictures" class="topbar" href="pictures.html">Pictures</a> <!--<span class="vl"></span>--> <a id="fixtaxes" class="topbar" href="how-to-fix-taxes.html">How to Fix Taxes</a>
+  </div>
+  <div id="body">
+    <p id="name"><strong>Rohan Juneja</strong></p>
+    
+    <hr class="horizline" align="center">
+    
+    <p id="description">S O F T W A R E&nbsp;&nbsp;&nbsp;D E V E L O P E R</p>
+    
+    <hr class="horizline" align="center">
   </div>
 <script>
   
