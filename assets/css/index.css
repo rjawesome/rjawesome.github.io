@@ -55,3 +55,12 @@ hr {
 #navbar-collapse {
     z-index: 9999;
 }
+
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: inline-block!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+}
