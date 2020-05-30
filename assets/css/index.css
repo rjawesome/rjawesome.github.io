@@ -63,10 +63,15 @@ hr {
         -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }
+    
+    
 }
 
 @media (max-width: 576px) {
     #name {
         font-size: 50px !important;
+    }
+    #description {
+        font-size: 15px !important;
     }
 }
