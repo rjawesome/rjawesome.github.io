@@ -85,6 +85,15 @@ hr {
     .card-container {
         padding-top: 30px;
     }
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-brand {
+        float: left;
+    }
+    .navbar-toggler {
+        float: right;
+    }
 }
 .card {
     width: 90% !important;

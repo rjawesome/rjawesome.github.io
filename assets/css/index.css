@@ -74,4 +74,13 @@ hr {
     #description {
         font-size: 15px !important;
     }
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-brand {
+        float: left;
+    }
+    .navbar-toggler {
+        float: right;
+    }
 }
