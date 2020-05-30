@@ -64,3 +64,9 @@ hr {
         flex-basis: auto;
     }
 }
+
+@media (max-width: 576px) {
+    #name {
+        font-size: 50px !important;
+    }
+}
