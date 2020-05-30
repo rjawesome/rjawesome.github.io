@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                       </li>
                       <!--<li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -42,10 +42,11 @@
                           Competitions
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="competitions.html#cyberpatriot">CyberSecurity</a>
-                            <a class="dropdown-item" href="competitions.html#usaco">Programming</a>
-                            <a class="dropdown-item" href="competitions.html#ftc">Robotics</a>
-                            <a class="dropdown-item" href="competitions.html#math">Math</a>
+                            <a class="dropdown-item" href="competitions.html#cyberpatriot" onclick="navmove()">CyberPatriot</a>
+                            <a class="dropdown-item" href="competitions.html#ctf" onclick="navmove()">CTFs</a>
+                            <a class="dropdown-item" href="competitions.html#usaco" onclick="navmove()">Programming</a>
+                            <a class="dropdown-item" href="competitions.html#ftc" onclick="navmove()">Robotics</a>
+                            <a class="dropdown-item" href="competitions.html#math" onclick="navmove()">Math</a>
                         </div>
                       </li>
                       <li class="nav-item dropdown">
@@ -68,58 +69,89 @@
                 <strong>Competitions</strong>
             </p>
             <div id="cards" class="col-sm-12">
-            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="cyberpatriot">
-                <div class="row no-gutters">
-                    <div class="col-md-4 my-auto">
-                    <img src="./assets/images/cyberpatriot.png" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">CyberPatriot</h5>
-                        <p class="card-text">CyberPatriot is a national CyberSecurity Competitions with thousands of teams. My awards for CyberPatriot Include: CyberPatriot XI Cisco Challenge Winner, CyberPatriot XII National Champion and Cisco Challenge Winner.</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="usaco">
-                <div class="row no-gutters">
-                    <div class="col-md-4 my-auto">
-                    <img src="./assets/images/usaco.png" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">USACO</h5>
-                        <p class="card-text">USACO is the premiere Competitve Programming Competition in the United States. I am currently in the Silver Level of USACO.</p>
-                    </div>
+                <div id="cyberpatriot" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                <img src="./assets/images/cyberpatriot.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">CyberPatriot</h5>
+                                    <p class="card-text">CyberPatriot is a national CyberSecurity Competitions with thousands of teams. My awards for CyberPatriot Include:<br> <ul><li class="bullet">CyberPatriot XI Cisco Challenge Winner</li> <li class="bullet">CyberPatriot XII National Champion and Cisco Challenge Winner</li></ul></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="ftc">
-                <div class="row no-gutters">
-                    <div class="col-md-4 my-auto mx-auto">
-                    <img src="./assets/images/ftc2.png" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">FTC</h5>
-                        <p class="card-text">FTC (FIRST Tech Challenge) is a national robotics competition. Our team has made it to the San Diego Regional Competition twice.</p>
-                    </div>
+                <div id="ctf" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                <img src="./assets/images/ctf.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">CTFs</h5>
+                                    <p class="card-text">CTFs are CyberSecurity Competition in which your goal is to obtain "flags" I have many awards from CTFs including:<br> <ul><li class="bullet">2019 SCCC Challenge - 3rd Place ($3,500 grant)</li> <li class="bullet">2020 SCCC Challenge - 2nd Place ($2,500 grant)</li> <li class="bullet">2020 SANS Net Wars; First-Timers Division - 7th Place (out of 25 teams)</li> <li class="bullet">2019 PicoCTF - 226th Place (out of 8,260 teams)</li></ul></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="math">
-                <div class="row no-gutters">
-                    <div class="col-md-4 my-auto">
-                    <img src="./assets/images/math.png" class="card-img" alt="...">
+                <div id="usaco" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 my-auto">
+                            <img src="./assets/images/usaco.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">USACO</h5>
+                                <p class="card-text">USACO is the premiere Competitve Programming Competition in the United States. My awards for USACO Include:<br><ul><li class="bullet">Currently in USACO Silver Level</li></ul></p>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Math</h5>
-                        <p class="card-text">I have done many math competitions and had many achievements. These include making it to San Diego Chapter Round 3 times for MathCounts, and placing Top 5% in MOEMS Math Olympiad 3 times.</p>
+                </div>
+                <div id="ftc" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 my-auto mx-auto">
+                            <img src="./assets/images/ftc2.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">FTC</h5>
+                                <p class="card-text">FTC (FIRST Tech Challenge) is a national robotics competition. I have competed with FTC Team Scorpio for 2 years. My Awards Include: <ul><li class="bullet">Made it to San Diego Regional Competition Twice</li></ul></p>
+                            </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div id="math" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;" id="math">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 my-auto">
+                            <img src="./assets/images/math.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Math</h5>
+                                <p class="card-text">I love doing math competitions and had many achievements. These include: <ul><li class="bullet">Making it to San Diego Chapter Round 3 times for MathCounts</li> <li class="bullet">Top 2% in MOEMS Math Olympiad</li><li class="bullet">Gold Honor Role for AMC 8</li></ul></p>
+                            </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+    <script>
+        var x = window.matchMedia("(max-width: 576px)")
+        navmove = () => {
+            if (x.matches) {
+                $('.navbar-toggler').click();
+            }
+        }
+    </script>
 </html>
