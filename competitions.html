@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Righteous" />
+        <link rel="stylesheet" type="text/css" href="assets/css/competitions.css" />
+
+        <script src="http://getbootstrap.com/2.3.2/assets/js/jquery.js"></script>
+        <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-transition.js"></script>
+        <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script>
+        <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-collapse.js"></script>
+
+        <title>rohanj.dev</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="contianer-fluid" style="width: 100%;">
+                <div class="navbar-header" style="display: inline-block;">
+                    <a class="navbar-brand" href="#">rohanj.dev</a>
+                    <button class="navbar-toggler custom-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <!--hi-->
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <!--<li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>-->
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Competitions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="competitions.html#cyberpatriot">CyberSecurity</a>
+                            <a class="dropdown-item" href="competitions.html#usaco">Programming</a>
+                            <a class="dropdown-item" href="competitions.html#ftc">Robotics</a>
+                            <a class="dropdown-item" href="competitions.html#math">Math</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Hangman</a>
+                          <a class="dropdown-item" href="#">AlzheimersAI</a>
+                          <a class="dropdown-item" href="#">Spark</a>
+                          <a class="dropdown-item" href="#">Fabric</a>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="body">
+            <p id="name">
+                <strong>Competitions</strong>
+            </p>
+            <div id="cards" class="col-sm-12">
+            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="cyberpatriot">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto">
+                    <img src="./assets/images/cyberpatriot.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">CyberPatriot</h5>
+                        <p class="card-text">CyberPatriot is a national CyberSecurity Competitions with thousands of teams. My awards for CyberPatriot Include: CyberPatriot XI Cisco Challenge Winner, CyberPatriot XII National Champion and Cisco Challenge Winner.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="usaco">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto">
+                    <img src="./assets/images/usaco.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">USACO</h5>
+                        <p class="card-text">USACO is the premiere Competitve Programming Competition in the United States. I am currently in the Silver Level of USACO.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="ftc">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto mx-auto">
+                    <img src="./assets/images/ftc2.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">FTC</h5>
+                        <p class="card-text">FTC (FIRST Tech Challenge) is a national robotics competition. Our team has made it to the San Diego Regional Competition twice.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 mx-auto" style="max-width: 90%;" id="math">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto">
+                    <img src="./assets/images/math.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Math</h5>
+                        <p class="card-text">I have done many math competitions and had many achievements. These include making it to San Diego Chapter Round 3 times for MathCounts, and placing Top 5% in MOEMS Math Olympiad 3 times.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

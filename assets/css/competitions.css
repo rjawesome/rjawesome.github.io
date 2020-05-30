@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+body {
+    /* background:url("../images/binary2.gif");
+    background-repeat: no-repeat; */
+    height:100%;
+    background-size: 100% 100%;
+    padding-top: 65px;
+}
+.navbar-brand {
+    font-family: Righteous;
+}
+nav {
+    background: #00F260;  
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  
+    background: linear-gradient(to right, #0575E6, #00F260); 
+}
+#description {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size:20px;
+    margin-bottom: 0;
+}
+#name {
+    font-size:100px;
+}
+#body {
+    text-align:center;
+    color:black;
+    font-family:Righteous;
+    width:100%;
+}
+hr {
+    color: white;
+    background-color: white;
+    text-align:center;
+    margin-left:40%;
+    width:20%;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */ 
+  
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+#navbar-collapse {
+    z-index: 9999;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: inline-block!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    h5 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    #name {
+        font-size: 50px !important;
+    }
+    .card {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.card {
+    width: 90% !important;
+}
