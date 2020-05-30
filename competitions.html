@@ -11,7 +11,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Righteous" />
         <link rel="stylesheet" type="text/css" href="assets/css/competitions.css" />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+        <script src="https://unpkg.com/aos@2.1.1/dist/aos.js"></script>
         <script src="http://getbootstrap.com/2.3.2/assets/js/jquery.js"></script>
         <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-transition.js"></script>
         <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script>
@@ -19,7 +22,10 @@
 
         <title>rohanj.dev</title>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <script>
+            AOS.init();
+        </script>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
             <div class="contianer-fluid" style="width: 100%;">
                 <div class="navbar-header" style="display: inline-block;">
@@ -54,10 +60,10 @@
                           Projects
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Hangman</a>
-                          <a class="dropdown-item" href="#">AlzheimersAI</a>
-                          <a class="dropdown-item" href="#">Spark</a>
-                          <a class="dropdown-item" href="#">Fabric</a>
+                          <a class="dropdown-item" href="projects.html#hangman">Hangman</a>
+                          <a class="dropdown-item" href="projects.html#alzai">AlzheimersAI</a>
+                          <a class="dropdown-item" href="projects.html#spark">Spark</a>
+                          <a class="dropdown-item" href="projects.html#fabric">Fabric</a>
                         </div>
                       </li>
                     </ul>
@@ -153,5 +159,7 @@
                 $('.navbar-toggler').click();
             }
         }
+        AOS.init()
+        
     </script>
 </html>
