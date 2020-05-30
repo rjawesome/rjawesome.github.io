@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Righteous" />
+        <link rel="stylesheet" type="text/css" href="assets/css/competitions.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+        <script src="https://unpkg.com/aos@2.1.1/dist/aos.js"></script>
+        <script src="http://getbootstrap.com/2.3.2/assets/js/jquery.js"></script>
+        <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-transition.js"></script>
+        <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script>
+        <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-collapse.js"></script>
+
+        <title>rohanj.dev</title>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <script>
+            AOS.init();
+        </script>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="contianer-fluid" style="width: 100%;">
+                <div class="navbar-header" style="display: inline-block;">
+                    <a class="navbar-brand" href="/">rohanj.dev</a>
+                    <button class="navbar-toggler custom-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <!--hi-->
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                      </li>
+                      <!--<li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>-->
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Competitions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="competitions.html#cyberpatriot" onclick="navmove()">CyberPatriot</a>
+                            <a class="dropdown-item" href="competitions.html#ctf" onclick="navmove()">CTFs</a>
+                            <a class="dropdown-item" href="competitions.html#usaco" onclick="navmove()">Programming</a>
+                            <a class="dropdown-item" href="competitions.html#ftc" onclick="navmove()">Robotics</a>
+                            <a class="dropdown-item" href="competitions.html#math" onclick="navmove()">Math</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="projects.html#hangman">Hangman</a>
+                          <a class="dropdown-item" href="projects.html#alzai">AlzheimersAI</a>
+                          <a class="dropdown-item" href="projects.html#spark">Spark</a>
+                          <a class="dropdown-item" href="projects.html#fabric">Fabric</a>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="body">
+            <p id="name">
+                <strong>Competitions</strong>
+            </p>
+            <div id="cards" class="col-sm-12">
+                <div id="hangman" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                <img src="./assets/images/hangman.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://play.google.com/store/apps/details?id=com.rohanj.hangman" target="_blank">Hangman</a></h5>
+                                    <p class="card-text">I created this Hangman game when I realized I was bored to death trying to learn vocabulary. My Hangman includes wordlists and defintions for the SAT test, as well as a clasic version, so you can increase your vocabulary!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="alzai" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                <img src="./assets/images/alzheimersai.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://alzheimersai.tk" target="_blank">AlzheimersAI</a></h5>
+                                    <p class="card-text">AlzheimersAI is a web solution for early detection and tracking of Alzheimer's disease. Made in collaboration with <a href="https://rgbhack.tk" target="_blank">RGBHack</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="spark" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 my-auto">
+                            <img src="./assets/images/spark.png" class="card-img" alt="..." style="padding: 30px;">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://sparkapp.cf" target="_blank">Spark</a></h5>
+                                <p class="card-text">After finding ourselves needing so many tools in distance learning, we decided to create Spark, an intuitive and empowering all-in-one productivity web app. Made in collaboration with <a href="https://rgbhack.tk" target="_blank">RGBHack</a>.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fabric" class="card-container">
+                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 my-auto mx-auto">
+                            <img src="./assets/images/fabric.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://fabric-2121.herokuapp.com">Fabric</a></h5>
+                                <p class="card-text">Fabric is a synchronized whiteboard that allows teachers to easily communicate with students.  Made in collaboration with <a href="https://rgbhack.tk" target="_blank">RGBHack</a>.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var x = window.matchMedia("(max-width: 576px)")
+        navmove = () => {
+            if (x.matches) {
+                $('.navbar-toggler').click();
+            }
+        }
+        AOS.init()
+        
+    </script>
+</html>
