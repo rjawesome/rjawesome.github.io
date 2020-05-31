@@ -83,4 +83,22 @@ hr {
     .navbar-toggler {
         float: right;
     }
+    .icon {
+        background-color: white;
+        width: 35px !important;
+        height: 35px !important;
+        padding: 5px;
+        margin: 7px !important;
+        margin-top: 10px !important;
+    }
+}
+
+.icon {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
 }
