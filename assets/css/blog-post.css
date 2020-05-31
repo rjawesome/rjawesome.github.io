@@ -1,3 +1,9 @@
 kbd {
     display: inline-block;
 }
+
+@media (max-width: 576px) {
+    #file {
+        width: 100%;
+    }
+}
