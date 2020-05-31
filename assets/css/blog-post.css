@@ -3,7 +3,7 @@ kbd {
 }
 
 @media (max-width: 576px) {
-    #file {
+    img {
         width: 100%;
     }
 }
