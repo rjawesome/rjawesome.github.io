@@ -136,9 +136,9 @@
 
                 <p>After that, we need to start our server (I am making it run on Port 5004 for local testing)</p>
 
-                <p><kbd>app = Flask(__name__)<br>socketio = SocketIO(app)<br>socketio.run(app, debug=True, port=5004)</kbd></p>
+                <p><kbd>app = Flask(__name__)<br>socketio = SocketIO(app)<br>if __name__ == "__main__:<br>&nbsp;&nbsp;&nbsp;&nbsp;socketio.run(app, debug=True, port=5004)</kbd></p>
 
-                <p>Now, we can add a basic redirect, making the root (/) redirect to the index.html file we have in templates. <strong>Make sure to keep the socketio.run() command on the bottom.</strong></p>
+                <p>Now, we can add a basic redirect, making the root (/) redirect to the index.html file we have in templates. <strong>Make sure to keep the if __name__ == "__main__" part on the bottom</strong></p>
 
                 <p><kbd>@app.route('/')<br>def index():<br>&nbsp;&nbsp;&nbsp;&nbsp;return render_template('index.html')</kbd></p>
 
@@ -184,7 +184,7 @@
 
                 <p><kbd>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"&gt;&lt;/script&gt;<br>&lt;script&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;var socket = io()<br>&nbsp;&nbsp;&nbsp;&nbsp;function sendMessage () {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(document.getElementById("chat-input").value)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;socket.emit(message,document.getElementById("chat-input").value)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&lt;/script&gt;</kbd></p>
 
-                <p>Here we emit a message with the title "message" and data containing what the message is. Now, let us go back to our server in app.py so we can respond to this Socket.IO message. Again, remember to keep the run call on the bottom.</p>
+                <p>Here we emit a message with the title "message" and data containing what the message is. Now, let us go back to our server in app.py so we can respond to this Socket.IO message. Again, remember to keep the if __name == "__main__" part on the bottom.</p>
 
                 <p><kbd>@socketio.on("message")<br>def handleMessage(data):<br>&nbsp;&nbsp;&nbsp;&nbsp;emit("new_message",data,broadcast=True)</kbd></p>
 
@@ -197,6 +197,8 @@
                 <p>This code creates a newline and then adds any message sent to the message div. Now you can push your code to GitHub and test out your app on Heroku!</p>
 
                 <img src="assets/images/blog/final.png">
+
+                <p>You can see my code <a href="https://github.com/rjawesome/heroku_socketio" target="_blank">here</a> and try an interactive demo <a href="https://heroku-socketio-test.herokuapp.com" target="_blank">here</a></p>
 
               </div>
         
