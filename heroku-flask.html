@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Righteous" />
         <link rel="stylesheet" type="text/css" href="assets/css/competitions.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/blog-post.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -55,7 +56,7 @@
                             <a class="dropdown-item" href="competitions.html#math" onclick="navmove()">Math</a>
                         </div>
                       </li>
-                      <li class="nav-item dropdown active">
+                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Projects
                         </a>
@@ -66,87 +67,105 @@
                           <a class="dropdown-item" href="projects.html#fabric">Fabric</a>
                         </div>
                       </li>
-                      <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Blog
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="heroku-flask.html">Heroku w/ Flask</a>
-                            <a class="dropdown-item" href="socketio.html">Socket.IO w/ Flask & Heroku</a>
+                          <a class="dropdown-item" href="#">Heroku w/ Flask</a>
+                          <a class="dropdown-item" href="socketio.html">Socket.IO w/ Flask & Heroku</a>
                         </div>
                       </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div id="body">
-            <p id="name">
-                <strong>Projects</strong>
-            </p>
-            <div id="cards" class="col-sm-12">
-                <div id="hangman" class="card-container">
-                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4 my-auto">
-                                <img src="./assets/images/hangman.png" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="https://play.google.com/store/apps/details?id=com.rohanj.hangman" target="_blank">Hangman</a></h5>
-                                    <p class="card-text">I created this Hangman game when I realized I was bored to death trying to learn vocabulary. My Hangman includes wordlists and defintions for the SAT test, as well as a clasic version, so you can increase your vocabulary!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="alzai" class="card-container">
-                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4 my-auto">
-                                <img src="./assets/images/alzheimersai.png" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="https://alzheimersai.tk" target="_blank">AlzheimersAI</a></h5>
-                                    <p class="card-text">AlzheimersAI is a web solution for early detection and tracking of Alzheimer's disease. Made in collaboration with <a href="https://rgbhack.tk" target="_blank">RGBHack</a>.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="spark" class="card-container">
-                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4 my-auto">
-                            <img src="./assets/images/spark.png" class="card-img" alt="..." style="padding: 30px;">
-                            </div>
-                            <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://sparkapp.cf" target="_blank">Spark</a></h5>
-                                <p class="card-text">After finding ourselves needing so many tools in distance learning, we decided to create Spark, an intuitive and empowering all-in-one productivity web app. Made in collaboration with <a href="https://rgbhack.tk" target="_blank">RGBHack</a>.</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="fabric" class="card-container">
-                    <div class="card mb-3 mx-auto" style="max-width: 90%;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4 my-auto mx-auto">
-                            <img src="./assets/images/fabric.png" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://fabric-2121.herokuapp.com">Fabric</a></h5>
-                                <p class="card-text">Fabric is a synchronized whiteboard that allows teachers to easily communicate with students.  Made in collaboration with <a href="https://rgbhack.tk" target="_blank">RGBHack</a>.</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+        <div class="container">        
+                <!-- Title -->
+                <h1 class="mt-4">How to use Flask/Heroku</h1>
+        
+                <!-- Author -->
+                <p class="lead">
+                  by
+                  <a href="/">Rohan Juneja</a>
+                </p>
+        
+        
+                <!-- Date/Time -->
+                <p>Posted on May 30, 2020 6:00 PM</p>
+        
+        
+                <!-- Preview Image
+                <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+                Post Content
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+                -->
+
+                <p>Flask is a great server side backend which can be paried with Heroku to host your website</p>
+        
+                <p>The first step is to download all the required dependencies. You will need to first install Python 3 and Git. Then you need to install dependencies to python using the following command:</p>
+
+                <p><kbd>pip install gunicorn Flask</kbd></p>
+        
+                <p>After everything is installed, you need to set up your project's file structure in a GitHub repository.</p>
+
+                <img src="/assets/images/blog/socketio_file_structure.png" id="file">
+
+                <p>You can get your GitHub Repository to your local system by running the command</p>
+
+                <p><kbd>git clone github.com/username/repository.git</kbd></p>
+        
+                <p>We will talk about each of these files later. Additionally, you need to set up a Heroku project. I recommend linking your project to GitHub for easy deployment. This way, whenver you push to GitHub, it will automatically deploy to Heroku.</p>
+                
+                <img src="/assets/images/blog/github_heroku.png" width="80%">
+
+                <p>Now, the next step is to set up your basic files. First, requirements.txt should contain all the Python Packages you downloaded which I have listed below:</p>
+
+                <p><kbd>gunicorn<br>Flask</kbd></p>
+
+                <p>This tells Heroku which Python packages it needs to install. The next step is to set up Procfile. Procfile tells Heroku what to execute. Procfile should contain this:</p>
+
+                <p><kbd>web: gunicorn app:app --log-file=-</kbd></p>
+
+                <p>This tells Heroku to start the app. The next file to set up is runtime.txt. This just tells Heroku what Python Version to use. In this case, I recommend putting the newest version of Python like so:</p>
+
+                <p><kbd>python-3.7.7</kbd></p>
+
+                <p>The next thing to do is to set up app.py, which is our server. We first need to import all the necessary libraries</p>
+
+                <p><kbd>from flask import Flask, render_template, make_response, redirect</p>
+
+                <p>After that, we need to start our server (I am making it run on Port 5004 for local testing)</p>
+
+                <p><kbd>app = Flask(__name__)<br>socketio = SocketIO(app)<br>if __name__ == "__main__":<br>&nbsp;&nbsp;&nbsp;&nbsp;socketio.run(app, debug=True, port=5004)</kbd></p>
+
+                <p>Now, we can add a basic redirect, making the root (/) redirect to the index.html file we have in templates. <strong>Make sure to keep the if __name__ == "__main__" part on the bottom</strong></p>
+
+                <p><kbd>@app.route('/')<br>def index():<br>&nbsp;&nbsp;&nbsp;&nbsp;return render_template('index.html')</kbd></p>
+
+                <p>Now you can just add something basic in index.html for testing.</p>
+
+                <p><kbd>Hello World!</kbd></p>
+
+                <p>Go into the directory where your project is stored in a command line, and then run the server Python program</p>
+
+                <p><kbd>cd /path/to/project<br>python3 app.py</kbd></p>
+
+                <p>To test if your server is working, try going to localhost:5004 in your browser. You should see what you put in index.html</p>
+
+                <img src="assets/images/blog/basic_server.png">
+
+                <p>To deploy what you have to Heroku, just push your code to your GitHub Repo using the following commands:</p>
+
+                <p><kbd>git add .<br>git commit -m "commit message"<br>git pull</kbd></p>
+
+                <p>After a few minutes, you should be able to see your project at projectname.herokuapp.com.</p>
+
+                <p>To see a sample application of how this would work, check out <a href="socketio.html">my blog post</a> on Socket.IO</p>
+
+              </div>
+        
+          </div>
     <script>
         var x = window.matchMedia("(max-width: 576px)")
         navmove = () => {
