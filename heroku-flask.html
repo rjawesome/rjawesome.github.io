@@ -138,7 +138,7 @@
 
                 <p>After that, we need to start our server (I am making it run on Port 5004 for local testing)</p>
 
-                <p><kbd>app = Flask(__name__)<br>socketio = SocketIO(app)<br>if __name__ == "__main__":<br>&nbsp;&nbsp;&nbsp;&nbsp;socketio.run(app, debug=True, port=5004)</kbd></p>
+                <p><kbd>app = Flask(__name__)<br>if __name__ == "__main__":<br>&nbsp;&nbsp;&nbsp;&nbsp;app.run(debug=True, host='127.0.0.1', port=5004)</kbd></p>
 
                 <p>Now, we can add a basic redirect, making the root (/) redirect to the index.html file we have in templates. <strong>Make sure to keep the if __name__ == "__main__" part on the bottom</strong></p>
 
