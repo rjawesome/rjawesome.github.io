@@ -138,9 +138,9 @@
 
                 <p><kbd>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"&gt;&lt;/script&gt;<br>&lt;script&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;var socket = io()<br>&nbsp;&nbsp;&nbsp;&nbsp;function sendMessage () {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(document.getElementById("chat-input").value)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;socket.emit(message,document.getElementById("chat-input").value)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&lt;/script&gt;</kbd></p>
 
-                <p>Here we emit a message with the title "message" and data containing what the message is. Now, let us go back to our server in app.py so we can respond to this Socket.IO message. Again, remember to keep the if __name == "__main__" part on the bottom.</p>
+                <p>Here we emit a message with the title "message" and data containing what the message is. Now, let us go back to our server in app.py so we can respond to this Socket.IO message. We need to import Socket.IO and run the app with Socket.IO as so:</p>
 
-                <p><kbd>@socketio.on("message")<br>def handleMessage(data):<br>&nbsp;&nbsp;&nbsp;&nbsp;emit("new_message",data,broadcast=True)</kbd></p>
+                <p><kbd>from flask import Flask, render_template, make_response, redirect<br>from flask_socketio import SocketIO, send, emit<br><br>app = Flask(__name__)<br>socketio = SocketIO(app)<br><br>@app.route('/')<br>def index():<br>&nbsp;&nbsp;&nbsp;&nbsp;return render_template('index.html')<br><br>@socketio.on("message")<br>def handleMessage(data):<br>&nbsp;&nbsp;&nbsp;&nbsp;emit("new_message", data, broadcast=True)<br><br>if __name__ == "__main__":<br>&nbsp;&nbsp;&nbsp;&nbsp;socketio.run(app, debug=True, port=5004)</kbd></p>
 
                 <p>Here, we say if a Socket.IO message is sent with the title "message", we will emit a Socket.IO message to the clients with a title "new_message" containing the data of the message. Additionally, "broadcast=True" broadcasts the message to all clients.</p>
 
