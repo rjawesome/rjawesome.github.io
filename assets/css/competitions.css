@@ -25,11 +25,12 @@ nav {
 }
 #name {
     font-size:100px;
+    font-family:Righteous;
 }
 #body {
     text-align:center;
     color:black;
-    font-family:Righteous;
+    /* font-family:Righteous; */
     width:100%;
 }
 hr {

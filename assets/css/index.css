@@ -34,7 +34,9 @@ nav {
     position: absolute;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width:100%;
+    /* border-radius: 5vw; */
+    width: 100% !important;
+    /* background: rgba(0,0,0,0.8); */
 }
 hr {
     color: white;
@@ -91,6 +93,9 @@ hr {
         margin: 7px !important;
         margin-top: 10px !important;
     }
+    /* #body {
+        border-radius: 10vw !important;
+    } */
 }
 
 .icon {

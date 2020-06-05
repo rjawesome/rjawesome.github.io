@@ -61,7 +61,7 @@
                             <a class="dropdown-item" href="projects.html#fabric">Fabric</a>
                         </div>
                       </li>
-                      <!--<li class="nav-item dropdown">
+                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Volunteering
                         </a>
@@ -69,7 +69,7 @@
                             <a class="dropdown-item" href="projects.html#relayforlife">Relay for Life</a>
                             <a class="dropdown-item" href="projects.html#sciencefieldday">Science Field Day</a>
                         </div>
-                      </li>-->
+                      </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Blog
@@ -84,7 +84,7 @@
             </div>
         </nav>
         <div id="body">
-            <p id="name"><strong>Rohan Juneja</strong></p>
+            <p id="name" style="display: inline-block;"><strong>Rohan Juneja</strong></p>
             
             <hr class="horizline" align="center">
             
@@ -198,6 +198,16 @@ c281 14 555 104 974 321 99 52 797 428 1550 836 754 408 1808 979 2343 1268
                 setTimeout(typeWriter,1000)
             }
         }
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                document.getElementById("body").style.width = "100%";
+            } else {
+                document.getElementById("body").style.width = (document.getElementById("name").offsetWidth+250).toString()+"px";
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 576px)")
+        //myFunction(x)
         typeWriter()
     </script>
 </html>
