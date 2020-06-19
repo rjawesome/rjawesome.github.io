@@ -118,3 +118,7 @@ body {
 -ms-overflow-style: none;
 }
 */
+
+.navbar-toggler:focus {
+    outline: none;
+}
