@@ -11,3 +11,7 @@ kbd {
         overflow-x: scroll;
     }
 }
+
+body {
+  background: white !important;
+}
