@@ -122,3 +122,7 @@ body {
 .navbar-toggler:focus {
     outline: none;
 }
+
+.filler {
+  height: 10px;
+}
